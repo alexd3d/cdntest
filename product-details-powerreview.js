@@ -1,4 +1,3 @@
-export const loadPowerReviewScript = () => {
     window.POWERREVIEWS = (function (publicScope) {
         publicScope.ext = publicScope.ext || {};
         publicScope.ext.evaluate = function (arg) {
@@ -5777,5 +5776,3 @@ export const loadPowerReviewScript = () => {
         }
         return E;
     })(window.POWERREVIEWS);
-
-}
