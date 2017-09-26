@@ -7,7 +7,7 @@
     })(window.POWERREVIEWS || {});
 
     window.POWERREVIEWS = (function (E) {
-        console.log('POWERREVIEWS INIT')
+        console.log('POWERREVIEWS (INIT)')
         E.common = E.common || {};
         E.display = E.display || {};
         E.config = E.config || {};
@@ -4102,7 +4102,7 @@
                 De.push("Back to top");
                 De.push("</a></p></div>");
                 if (Dp > DT) {
-                    De.push('<div class="pr-page-nav-wrapper"><p class="pr-page-nav"><span class="pr-page-prev somemmm0">');
+                    De.push('<div class="pr-page-nav-wrapper"><p class="pr-page-nav"><span class="pr-page-prev">');
                     if (Dh > 0) {
                         De.push('<a data-pr-event="footer-page-prev-link" onclick="POWERREVIEWS.display.getReviewsFromMeta(');
                         De.push(DW - 1);
@@ -4122,9 +4122,9 @@
                     } else {
                         De.push("Previous");
                     }
-                    De.push('</span><span class="pr-divider"> | </span><span class="pr-page-next somemmm2">');
+                    De.push('</span><span class="pr-divider"> | </span><span class="pr-page-next">');
                     if (DU < Dp - 1) {
-                        De.push('<a data-pr-event="footer-page-next-link" onclick="location.hash=\'#\'; location.hash=\'#pr-header-back-to-top-link\'; POWERREVIEWS.display.getReviewsFromMeta(');
+                        De.push('<a data-pr-event="footer-page-next-link" onclick="POWERREVIEWS.display.getReviewsFromMeta(');
                         De.push(DW + 1);
                         De.push(", '");
                         De.push(EE);
@@ -4134,7 +4134,7 @@
                         De.push(Dt);
                         De.push("', POWERREVIEWS.common.getOptions('");
                         De.push(Dt);
-                        De.push("'));  return (false);\" href=\"");
+                        De.push("')); location.hash='#'; location.hash='#pr-header-back-to-top-link'; return (false);\" href=\"");
                         De.push(DQ.replace("~~~REVIEW_PAGE~~~", DW + 1));
                         De.push('">');
                         De.push("Next");
