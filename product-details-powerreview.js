@@ -1,5 +1,6 @@
 
     window.POWERREVIEWS = (function (publicScope) {
+        console.log('POWERREVIEWS LOADED FROM CDN!')
         publicScope.ext = publicScope.ext || {};
         publicScope.ext.evaluate = function (arg) {
             return eval(arg);
