@@ -9,6 +9,7 @@
     })(window.POWERREVIEWS || {});
 
     window.POWERREVIEWS = (function (E) {
+        console.log('POWERREVIEWS INITED!')
         E.common = E.common || {};
         E.display = E.display || {};
         E.config = E.config || {};
