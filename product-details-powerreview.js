@@ -1,6 +1,4 @@
-
     window.POWERREVIEWS = (function (publicScope) {
-        console.log('POWERREVIEWS LOADED FROM CDN!')
         publicScope.ext = publicScope.ext || {};
         publicScope.ext.evaluate = function (arg) {
             return eval(arg);
@@ -9,7 +7,7 @@
     })(window.POWERREVIEWS || {});
 
     window.POWERREVIEWS = (function (E) {
-        console.log('POWERREVIEWS INITED!')
+        console.log('POWERREVIEWS INIT')
         E.common = E.common || {};
         E.display = E.display || {};
         E.config = E.config || {};
@@ -4126,7 +4124,7 @@
                     }
                     De.push('</span><span class="pr-divider"> | </span><span class="pr-page-next">');
                     if (DU < Dp - 1) {
-                        De.push('<a data-pr-event="footer-page-next-link" onclick="POWERREVIEWS.display.getReviewsFromMeta(');
+                        De.push('<a data-pr-event="footer-page-next-link" onclick="location.hash=\'#\'; location.hash=\'#pr-header-back-to-top-link\'; POWERREVIEWS.display.getReviewsFromMeta(');
                         De.push(DW + 1);
                         De.push(", '");
                         De.push(EE);
@@ -4136,7 +4134,7 @@
                         De.push(Dt);
                         De.push("', POWERREVIEWS.common.getOptions('");
                         De.push(Dt);
-                        De.push("')); location.hash='#'; location.hash='#pr-header-back-to-top-link'; return (false);\" href=\"");
+                        De.push("'));  return (false);\" href=\"");
                         De.push(DQ.replace("~~~REVIEW_PAGE~~~", DW + 1));
                         De.push('">');
                         De.push("Next");
