@@ -4102,7 +4102,7 @@
                 De.push("Back to top");
                 De.push("</a></p></div>");
                 if (Dp > DT) {
-                    De.push('<div class="pr-page-nav-wrapper"><p class="pr-page-nav"><span class="pr-page-prev">');
+                    De.push('<div class="pr-page-nav-wrapper"><p class="pr-page-nav"><span class="pr-page-prev somemmm0">');
                     if (Dh > 0) {
                         De.push('<a data-pr-event="footer-page-prev-link" onclick="POWERREVIEWS.display.getReviewsFromMeta(');
                         De.push(DW - 1);
@@ -4122,7 +4122,7 @@
                     } else {
                         De.push("Previous");
                     }
-                    De.push('</span><span class="pr-divider"> | </span><span class="pr-page-next">');
+                    De.push('</span><span class="pr-divider"> | </span><span class="pr-page-next somemmm2">');
                     if (DU < Dp - 1) {
                         De.push('<a data-pr-event="footer-page-next-link" onclick="location.hash=\'#\'; location.hash=\'#pr-header-back-to-top-link\'; POWERREVIEWS.display.getReviewsFromMeta(');
                         De.push(DW + 1);
